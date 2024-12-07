@@ -14,7 +14,6 @@ static std::vector<std::string> read_instructions(std::string pattern_str) {
 
     const std::regex pattern{pattern_str};
 
-
     for (std::string line; std::getline(file_stream, line);) {
 
         std::sregex_iterator iter{line.begin(), line.end(),pattern};
